@@ -17,9 +17,9 @@ public class Encryption {
     }
 
     private static String cipher(String inputText) {
-        double lengthSquaredRoot = Math.sqrt(Double.valueOf(inputText.length()));
-        int rowsNumber = (int) Math.floor(lengthSquaredRoot);
-        int colsNumber = (int) Math.ceil(lengthSquaredRoot);
+        double lengthSquareRoot = Math.sqrt(Double.valueOf(inputText.length()));
+        int rowsNumber = (int) Math.floor(lengthSquareRoot);
+        int colsNumber = (int) Math.ceil(lengthSquareRoot);
 
         if (arraySizeIncreaseNeeded(rowsNumber * colsNumber, inputText.length())) {
             rowsNumber++;
