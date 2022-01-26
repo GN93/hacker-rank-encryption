@@ -34,8 +34,8 @@ public class Encryption {
 
     private static String buildCipher(String inputText, int rowsNumber, int colsNumber) {
         char[][] array = convertToCharArray(inputText, rowsNumber, colsNumber);
-        StringBuilder sb = new StringBuilder();
 
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < colsNumber; i++) {
             for (int j = 0; j < rowsNumber; j++) {
                 sb.append(array[j][i]);
@@ -50,6 +50,7 @@ public class Encryption {
         char[][] inputTextArray = new char[rowsNumber][colsNumber];
         char[] inputArray = input.toCharArray();
         int pointer = 0;
+
         for (int i = 0; i < rowsNumber; i++) {
             inputTextArray[i] = Arrays.copyOfRange(inputArray, pointer, pointer + colsNumber);
             pointer += colsNumber;
