@@ -7,7 +7,7 @@ import com.github.gnajduch.utils.StringUtils;
 public class Encryption {
 
     /**
-     * @param inputText text to be ciphered
+     * @param inputText text to be encrypted
      * @return text encoded according to specification
      * @throws InputSizeExceededException if input text contains more than 81 characters
      */
